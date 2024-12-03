@@ -1,0 +1,336 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to left, #F2F9FF, #FFCCE1, #E195AB, #FFF5D7);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Highlight for "I'm a Content Creator" */
+.subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    color: #a16481;
+    margin-top: 15px;
+    text-shadow: 0 0 10px rgba(255, 0, 150, 0.7), 0 0 20px rgba(255, 0, 150, 0.7);
+}
+
+/* Highlight for "Hi, I'm Qheyla" */
+h1.title {
+    font-size: 36px;
+    background: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    text-shadow: 0 0 20px rgba(255, 0, 150, 0.7), 0 0 30px rgba(255, 0, 150, 0.7);
+}
+
+h1.title:hover {
+    text-shadow: 0 0 20px rgba(255, 0, 150, 0.9), 0 0 30px rgba(255, 0, 150, 0.9);
+}
+
+/* Navigation Bar */
+nav ul {
+    display: flex;
+    list-style: none;
+    background: #f1c5d1;
+    padding: 10px;
+    margin: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+    color: #005f99;
+}
+
+/* Title Styling */
+.logo {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow to the title */
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #E195AB;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+/* Social Media Links Styling */
+.social-links a {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow to social media links */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #f39ac1; /* Change background on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Page Sections */
+.page {
+    padding: 20px;
+}
+
+/* About Me Section */
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #f39ac1;
+}
+
+#photo-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; /* Space between About Me and Hobbies */
+}
+
+.profile-photo {
+    width: 500px;  /* Adjust the width of the photo */
+    height: auto;   /* Keep the aspect ratio of the image */
+    border-radius: 2%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Shadow to make it stand out */
+    border: 5px solid #fff; /* Optional: Adds a white border to the image */
+}
+
+/* Ensure spacing and text alignment are good */
+#skills-hobbies {
+    margin-top: 50px; /* Space between photo section and hobbies section */
+}
+
+/* Skills & Hobbies Section */
+#skills-hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Text box styling for hobbies */
+.hobby {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Shadow on each hobby box */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on hobby boxes */
+.hobby:hover {
+    transform: scale(1.05);
+    background-color: #FFF5D7; /* Light yellow background on hover */
+}
+
+/* Hobby title styling */
+.hobby h2 {
+    color: #3E4A56; /* Coklat dongker */
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Hobby description styling */
+.hobby p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Video and image styling inside each hobby */
+.media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.media video {
+    width: 180px;
+    height: 320px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.media img {
+    object-fit: cover;
+    width: 230px;
+    height: 320px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on video */
+.media video:hover {
+    transform: scale(1.1); /* Scale the video on hover */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+/* Get in Touch */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Text box for contact section */
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f39ac1;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #e27e98;
+}
+
+/* Label for contact form */
+#contact-form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #fdf6f0;
+}
+
+label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f39ac1;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button[type="reset"] {
+    background-color: #ddd;
+}
+
+#contact-form input, #contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#error-message, #success-message {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+#error-message {
+    background-color: #ffccd5;
+    color: #9c1a1a;
+}
+
+#success-message {
+    background-color: #c9f7c0;
+    color: #3d9e3b;
+}
+
+/* Section Titles */
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #3E4A56;
+    text-align: center;
+}
+
+/* Contact form buttons */
+form .form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Section Styling */
+#about-me, #skills-hobbies, #get-in-touch {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
